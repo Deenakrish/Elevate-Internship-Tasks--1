@@ -22,7 +22,7 @@ Open: 53/tcp — dnsmasq 2.51
 
 Device: Android phone (Android 9–10 / Linux 4.x)
 
-Vulnerabilities found: multiple high-severity CVEs for dnsmasq 2.51 (see scans/10.178.100.19_vuln.txt for full list).
+Vulnerabilities found: multiple high-severity CVEs for dnsmasq 2.51 (see scans/10.178.XX.XX_vuln.txt for full list).
 
 HOST 2-10.178.XX.XX
 
