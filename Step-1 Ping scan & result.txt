@@ -1,0 +1,41 @@
+                                                 Cyber Security Internship — Task 1: Network Scanning
+
+Date:13-11-2025
+Operating System: Linux
+Note: Nmap is pre-installed on my system, so there was no need for manual installation.
+
+                                               STEP 1: Identified My Local IP and Verified Connectivity
+
+SUMMARY:
+I identified my local IP address and pinged it to ensure that the network connection was working properly.
+
+                                                        Command 1: Identify Local IP Address
+
+Command Used: ip addr show
+
+Description:
+This command displays all network interfaces and their assigned IP addresses. From this output, I identified my system’s local IP address.
+The /24 indicates the subnet mask 255.255.255.0, meaning the network range is 192.168.1.0 – 192.168.1.255.
+
+What I Got:10.178.xx.xx
+                                                       Command 2: Test Connectivity and Save Results
+
+Command Used: ping -c 4 <ip-address> > ping_results.txt
+
+Description:
+This command sends 4 ICMP echo requests to the specified IP address to verify network connectivity.
+The -c 4 flag limits the ping test to 4 packets.
+The > operator redirects the output and saves it to a file named ping_results.txt.
+Use >> instead of > to append results to the same file instead of overwriting it.
+A successful reply (no packet loss) indicates the host is reachable and active.
+
+What I Got:
+PING 10.178.xx.xx (10.178.xx.xx) 56(84) bytes of data.
+64 bytes from 10.178.xx.xx: icmp_seq=1 ttl=64 time=0.053 ms
+64 bytes from 10.178.xx.xx: icmp_seq=2 ttl=64 time=0.026 ms
+64 bytes from 10.178.xx.xx: icmp_seq=3 ttl=64 time=0.046 ms
+64 bytes from 10.178.xx.xx: icmp_seq=4 ttl=64 time=0.030 ms
+
+--- 10.178.xx.xx ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3073ms
+rtt min/avg/max/mdev = 0.026/0.038/0.053/0.011 ms
