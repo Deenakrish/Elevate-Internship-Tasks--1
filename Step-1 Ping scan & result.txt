@@ -6,7 +6,7 @@ Note: Nmap is pre-installed on my system, so there was no need for manual instal
 
                                                STEP 1: Identified My Local IP and Verified Connectivity
 
-What I Did:
+SUMMARY:
 I identified my local IP address and pinged it to ensure that the network connection was working properly.
 
                                                         Command 1: Identify Local IP Address
